@@ -12,37 +12,39 @@ h2 {
 }
 
 .lading-screen {
+    background-image: url('./../../../assets/img/lading-page/hero-background.png');
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: #141D2F;
+    background-size: cover;
     height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: start;
     padding-top: 110px;
-
-  
 }
 
-.lading-section{
+.lading-section {
     width: 100%;
     display: flex;
-    align-items: center;  
-    justify-content: center;  
+    align-items: center;
+    justify-content: center;
 }
 
 .profile-picture {
     position: relative;
-    width: 650px; 
-    height: 700px; 
+    width: 650px;
+    height: 700px;
 }
 
 .profile-img {
-    position: absolute; 
+    position: absolute;
     left: 0;
     z-index: 333;
     background: none;
-    width: 100%; 
-    height: 100%; 
+    width: 100%;
+    height: 100%;
 }
 
 .photo-shadow {
@@ -51,12 +53,12 @@ h2 {
     left: 0;
     z-index: 1;
     background: none;
-    width: 100%; 
-    height: 100%; 
+    width: 100%;
+    height: 100%;
 }
 
-.headline { 
-    margin-left: -100px;    
+.headline {
+    margin-left: -100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,3 +90,5 @@ h2 {
         }
     }
 }
+
+
