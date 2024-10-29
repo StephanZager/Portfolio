@@ -1,0 +1,22 @@
+div {
+
+    gap: 30px;
+    display: flex;
+    justify-content: space-around;
+    
+    a {
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    img {
+        background: none;
+        width: 30px;
+        height: 30px;
+
+        &:hover {
+            filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6));
+        }
+    }
+}

@@ -11,19 +11,19 @@ h2 {
 
 }
 
-.lading-screen {
-    background-image: url('./../../../assets/img/lading-page/hero-background.png');
-    background-position: center;
-    background-repeat: no-repeat;
+.lading-screen {    
     background-color: #141D2F;
-    background-size: cover;
-    height: 100vh;
     width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
     align-items: start;
     padding-top: 110px;
+    overflow: hidden;
+
 }
+
 
 .lading-section {
     width: 100%;
@@ -91,4 +91,43 @@ h2 {
     }
 }
 
+.seperator {
+    width: 100px;
+    border: 3px solid #9747FF;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
 
+.icon-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 570px;
+    position: absolute;
+    bottom: 10px;
+
+
+
+    p {
+        color: white;
+        font-size: 23px;
+        font-weight: 400;
+    }
+
+
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 100vh; // Begrenze die Höhe auf 100vh
+   
+
+    img {
+        top: -500px;
+        background: none;
+        position: absolute;        
+        width: 100%; // Verwende 100% anstelle von 100vw, um sicherzustellen, dass das Bild die Breite des Containers einnimmt
+        height: auto; // Behalte das Seitenverhältnis des Bildes bei
+    }
+}
