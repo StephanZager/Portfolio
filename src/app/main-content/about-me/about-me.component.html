@@ -1,1 +1,22 @@
-<p>about-me works!</p>
+<section>
+    <div class="about-me">
+        <h3>About me</h3>
+        <div class="about-me-info">
+            <p>Hi, I’m a german speaking Frontend Developer based near Munich. Motivated by the limitless opportunities
+                within IT, I am excited about crafting visually captivating and intuitive websites and applications.
+            </p>
+
+            <div *ngFor="let mindset of mindsets" class="mindset">
+                <img [src]="mindset.imgSrc" alt="">
+                <p>{{ mindset.text }}</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="profile-picture">
+        <div class="img">
+            <img src="./../../../assets/img/lading-page/Mesa de trabajo 1 2.png" alt="">
+        </div>
+        <div class="seperator"></div>
+    </div>
+</section>
