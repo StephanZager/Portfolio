@@ -1,1 +1,26 @@
-<p>my-skills works!</p>
+<section id="skills">
+    <div class="icon-skill-bar">
+        <div *ngFor="let skill of skills; let last = last" class="icons-container" [ngClass]="{'last-img': last}">
+            <img [src]="skill.skillImg" alt="">
+            <p [ngClass]="{'last-skill': last}">{{ skill.skillName }}</p>
+        </div>
+
+    </div>
+
+
+    <div class="another-skill-section">
+        <div class="headline">
+            <h2>My skills</h2>
+            <div></div>
+        </div>
+        <div>
+            <p>I have gained experience in building projects with different frontend technologies an concepts.</p>
+        </div>
+        <div>            
+            <h3>Looking for <span>another skill</span>?</h3>
+            <p>Feel free to contact me. I look forward to expanding on my previous knowledge</p>
+        </div>
+        <button>Get in touch</button>
+    </div>
+
+</section>
