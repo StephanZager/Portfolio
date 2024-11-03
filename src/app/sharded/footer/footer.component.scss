@@ -1,0 +1,30 @@
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 290px;
+    border-top: 4px solid #70E61C;
+
+    
+    a {
+        color: white;
+        font-size: 18px;
+    }
+
+    span {
+        color: white;
+        font-size: 23px;
+    }
+}
+
+.logo-section {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.icon-bar {
+    width: 200px;
+}
