@@ -1,0 +1,20 @@
+<div *ngFor="let project of projects; let i = index" [ngClass]="{'row-reverse': i % 2 !== 0}" class="projects">    
+        <div>
+            <img [src]="project.img" alt="">
+        </div>
+        <div class="project-info">
+            <div class="project-explanation">
+                <h3>{{project.name}}</h3>
+                <span>{{project.programmingLanguage.join(' | ')}}</span>
+                <p>{{project.description}}</p>
+            </div>
+            <div class="buttons">
+                <a [href]="project.linkLive" target="_blank">
+                    <button class="button-live">Live test</button>
+                </a>
+                <a [href]="project.linkGithub" target="_blank">
+                    <button class="button-github">Github</button>
+                </a>
+            </div>
+        </div>  
+</div>

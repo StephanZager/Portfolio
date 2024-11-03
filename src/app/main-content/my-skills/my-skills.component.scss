@@ -51,8 +51,8 @@ section {
     h3 {
         color: white;
         font-size: 32px;
-        font-weight: 700; 
-        margin-bottom: 16px;     
+        font-weight: 700;
+        margin-bottom: 16px;
     }
 
     span {
@@ -69,7 +69,7 @@ section {
 .headline {
     display: flex;
     align-items: center;
-    justify-content: flex-end;    
+    justify-content: flex-end;
     gap: 32px;
 
     div {
@@ -99,6 +99,7 @@ section {
     align-items: center;
     justify-content: center;
     transition: transform 0.3s ease-in-out;
+    position: relative;
 
     img {
         background: none;
@@ -118,21 +119,40 @@ section {
 
 .last-skill {
     color: #9747FF;
+
+
 }
 
 .last-img {
     &:hover img {
-        filter: drop-shadow(0 0 10px rgba(151, 71, 255, 1)) !important;
+        filter: brightness(0) invert(1) drop-shadow(0 0 10px rgba(255, 255, 255, 0.6)) !important;
+        animation: none !important;
+    }
+
+    &:hover p {
+        color: white;
     }
 }
 
-button {   
+.continually-learning-popup {
+    display: none;
+    &:hover { 
+        display: block;       
+        position: absolute;
+        background: none;
+        margin-top: 60px;
+        margin-left: -5px;
+    }
+   
+}
+
+button {
     display: flex;
-    align-items: center; 
-    justify-content: center; 
+    align-items: center;
+    justify-content: center;
     height: 60px;
     width: 165px;
-    background-color: #70E61C;    
+    background-color: #70E61C;
     border: none;
     border-radius: 10px;
     color: white;
@@ -140,11 +160,12 @@ button {
     font-weight: 400;
     transition: transform 0.2s ease, background-color 0.2s ease;
     position: relative;
-   
-    
+
+
     &:hover {
         cursor: pointer;
         background-color: #9747FF;
-        transform: scale(1.1);        
+        transform: scale(1.1);
     }
 }
+

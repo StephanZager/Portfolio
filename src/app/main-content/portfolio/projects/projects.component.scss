@@ -1,0 +1,89 @@
+.projects {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+    &.row-reverse {
+        flex-direction: row-reverse; // Flex-Richtung für das zweite Projekt
+    }
+
+    img{
+        max-width: 500px;
+        width: 100%;
+        max-height: 340px;
+        height: auto;
+
+    }
+
+    h3 {
+        font-size: 32px;
+        font-weight: 700;
+        color: #9747FF;
+    }
+
+    span {
+        font-size: 23px;
+        color: #70E61C;
+    }
+
+    p {
+        font-size: 18px;
+        color: white;
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        width: 165px;
+        border-radius: 10px;
+        color: white;
+        font-size: 23px !important;
+        font-weight: 400;
+        cursor: pointer;
+
+    }
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 340px;
+    width: 100%;
+    max-width: 500px;
+
+}
+
+.project-explanation {
+    display: flex;
+    height: 160px;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.buttons {
+    display: flex;
+    gap: 50px;
+
+}
+
+.button-live {
+    background-color: #9747FF;
+    border: none;
+
+    &:hover {
+        background-color: #70E61C;
+    }
+}
+
+.button-github {
+    border: #70E61C 2px solid;
+
+    &:hover {
+        background-color: #70E61C;
+    }
+}
