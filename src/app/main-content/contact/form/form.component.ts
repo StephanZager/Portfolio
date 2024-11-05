@@ -13,6 +13,9 @@ export class FormComponent {
 
   borderError = '1px solid red';
   borderSuccess = '1px solid green';
+  bgError = "url('./../../../../assets/img/icons/false-form.png')";
+  bgSuccess = "url('./../../../../assets/img/icons/success-form.png')";
+
 
   contactData = {
     name: '',

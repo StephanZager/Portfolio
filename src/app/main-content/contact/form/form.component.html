@@ -1,17 +1,23 @@
 <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
 
     <div class="form-group">
-        <input [ngStyle]="{'border':!name.valid && message.touched ? borderError : ''}" #name="ngModel"
-            [(ngModel)]="contactData.name" type="text" name="user_name" placeholder="Your name" required />
-        @if(!name.valid && message.touched){
+        <input [ngStyle]="{'border':(!name.valid && name.touched ? borderError : '') || (name.valid ? borderSuccess : ''),
+            'background-img':(!name.valid && name.touched ? bgError : '') || (name.valid ? bgSuccess : '')
+        }"
+                       
+             #name="ngModel" [(ngModel)]="contactData.name" type="text" name="user_name" placeholder="Your name"
+            required />
+
+        @if(!name.valid && name.touched){
         <span class="error-message">Please enter a name</span>
         }
     </div>
 
     <div class="form-group">
-        <input [ngStyle]="{'border':!email.valid && email.touched ? borderError : ''}" #email="ngModel"
-            [(ngModel)]="contactData.email" type="email" name="user_email" placeholder="Your email" required
-            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" />
+        <input
+            [ngStyle]="{'border':(!email.valid && email.touched ? borderError : '') || (email.valid ? borderSuccess : '')}"
+            #email="ngModel" [(ngModel)]="contactData.email" type="email" name="user_email" placeholder="Your email"
+            required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" />
 
         @if(!email.valid && email.touched){
         <span class="error-message">Please enter a eMail</span>
@@ -19,8 +25,10 @@
     </div>
 
     <div class="form-group">
-        <textarea [ngStyle]="{'border':!message.valid && message.touched ? borderError : ''}" #message="ngModel"
-            [(ngModel)]="contactData.message" name="user_message" placeholder="Your message" required></textarea>
+        <textarea
+            [ngStyle]="{'border':(!message.valid && message.touched ? borderError : '') || (message.valid ? borderSuccess : '')}"
+            #message="ngModel" [(ngModel)]="contactData.message" name="user_message" placeholder="Your message"
+            required></textarea>
 
         @if(!message.valid && message.touched){
         <span class="error-message">Please enter a message</span>
@@ -29,15 +37,17 @@
 
 
     <div class="checkbox form-group">
-        <input #checkbox="ngModel" [(ngModel)]="contactData.check" [checked]="contactData.check == true" type="checkbox" id="confirmation" name="interest" value="music" required />
+        <input #checkbox="ngModel" [(ngModel)]="contactData.check" [checked]="contactData.check == true" type="checkbox"
+            id="confirmation" name="interest" value="music" required />
         <label for="confirmation">I've read the <a href="#">privacy policy</a> and agree to the processing of my data as
             outlined. </label>
-        
-            @if(contactData.check == false && checkbox.touched){
-                <span class="error-message">Please enter a message</span>
-                }    
+
+        @if(contactData.check == false && checkbox.touched){
+        <span class="error-message">Please enter a message</span>
+        }
     </div>
 
-    <button [disabled]="(!contactData.check || !message.valid || !name.valid || !email.valid)" type="submit" value="submit">Send message :)</button>
+    <button [disabled]="(!contactData.check || !message.valid || !name.valid || !email.valid)" type="submit"
+        value="submit">Send message :)</button>
 
 </form>
