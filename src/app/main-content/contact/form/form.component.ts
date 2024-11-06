@@ -16,15 +16,19 @@ export class FormComponent {
   bgError = "url('./../../../../assets/img/icons/false-form.png')";
   bgSuccess = "url('./../../../../assets/img/icons/success-form.png')";
 
-
   contactData = {
     name: '',
     email: '',
     message: '',
     check: false
   }
+  showError = false;
+  showNameError = false;
+  showEmailError = false;
+  showMessageError = false;
 
   onSubmit(ngForm: NgForm) {
+   
     if (ngForm.valid && ngForm.submitted) {
       console.log(this.contactData);
     }
