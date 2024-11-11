@@ -36,6 +36,7 @@ section {
     align-items: center;
     justify-content: space-between;
     padding-left: 100px;
+    position: relative;
 
 }
 
@@ -100,6 +101,7 @@ section {
     justify-content: center;
     transition: transform 0.3s ease-in-out;
     position: relative;
+    background: none;
 
     img {
         background: none;
@@ -114,6 +116,7 @@ section {
         font-size: 16px;
         font-weight: 700;
         text-align: center;
+        background: none;
     }
 }
 
@@ -169,3 +172,13 @@ button {
     }
 }
 
+
+.background-shadow{
+    position: absolute;
+    left: 150px;
+    bottom: 0;
+    background: none;
+    width: 550px;
+    transform: rotate(30deg);
+    
+}
