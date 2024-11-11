@@ -3,6 +3,7 @@ section {
     height: 100vh;
     display: flex;   
     flex-direction: column;
+    position: relative;
     
 }
 
@@ -48,4 +49,13 @@ section {
         
         
     }
+}
+
+.background-shadow{
+    background: none;
+    position: absolute;
+    bottom: 0;
+    right: 400px;
+    width: 800px;
+    z-index: 0;
 }
