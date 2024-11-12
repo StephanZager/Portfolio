@@ -1,15 +1,23 @@
 <header>
     <img src="./../../../assets/img/Logo.png" alt="">
 
-    <nav>
+    <nav class="nav-desktop">
         <a href="#about-me">About me</a>
         <a href="#skills">Skills</a>
         <a href="#portfolio">Portfolio</a>
     </nav>
 
-    <div (click)="burgerMenu()" class="burger">
+
+    <div (click)="toggleBurgerMenu()" class="burger">
         <div class="line1"></div>
         <div class="line2"></div>
         <div class="line3"></div>
     </div>
 </header>
+
+<nav [ngClass]="{'burger-menu': true, 'closing': isClosing}" *ngIf="isBurgerMenuOpen || isClosing">
+    <a href="#about-me" (click)="toggleBurgerMenu()">About me</a>
+    <a href="#skills" (click)="toggleBurgerMenu()">My skills</a>
+    <a href="#portfolio" (click)="toggleBurgerMenu()">Portfolio</a>
+    <a href="#contact" (click)="toggleBurgerMenu()">Contact</a>
+</nav>

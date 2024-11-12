@@ -1,15 +1,37 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [],
+  imports: [NavBarComponent, CommonModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
 
-  burgerMenu() {
-    console.log('burgerMenu');
+  isBurgerMenuOpen = false;
+  isClosing = false;
+
+  toggleBurgerMenu() {
+    if (this.isBurgerMenuOpen) {
+      this.isClosing = true;
+      setTimeout(() => {
+        this.isBurgerMenuOpen = false;
+        this.isClosing = false;
+      }, 500);
+    } else {
+      this.isBurgerMenuOpen = true;
+    }
+  }
+
+  @HostListener('document:click', ['$event'])
+  onDocumentClick(event: MouseEvent) {
+    const target = event.target as HTMLElement;
+    const isClickInsideMenu = target.closest('.burger-menu') || target.closest('.burger');
+    if (!isClickInsideMenu) {
+      this.isBurgerMenuOpen = false;
+    }
   }
 }

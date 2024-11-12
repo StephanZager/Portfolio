@@ -18,30 +18,35 @@ header {
         gap: 30px;
     }
 
-    a {
-        color: #FFFFFF;
-        font-weight: 400;
-        font-size: 23px;
-        line-height: 28px;
 
 
-        &:hover {
-            color: #70E61C;
-            cursor: pointer;
-        }
 
-        &::after {
-            content: '';
-            display: block;
-            width: 0;
-            height: 3px;
-            border-radius: 3px;
-            background-color: #9747FF;
-        }
+}
 
-        &:hover::after {
-            animation: underline-expand 0.2s forwards;
-        }
+a {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 28px;
+    background: none;
+
+
+    &:hover {
+        color: #70E61C;
+        cursor: pointer;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 3px;
+        border-radius: 3px;
+        background-color: #9747FF;
+    }
+
+    &:hover::after {
+        animation: underline-expand 0.2s forwards;
     }
 }
 
@@ -57,6 +62,7 @@ header {
 
 .burger {
     display: none;
+
     div {
         display: flex;
         flex-direction: column;
@@ -69,6 +75,58 @@ header {
 
     &:hover {
         cursor: pointer;
+        div{
+            border-radius: 100%;
+            filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.802))
+        }
+    }
+}
+
+.burger-menu {
+    display: none;
+    position: fixed;
+    top: 110px;
+    right: 0;
+    gap: 30px;
+    max-width: 300px;
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(18, 21, 27, 0.95);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 998;
+    border-radius: 20px;
+    animation: slideInDown 0.5s ease forwards;
+}
+
+.burger-menu.closing {
+    animation: slideOutUp 0.5s ease forwards;
+}
+
+@keyframes slideOutUp {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
 
@@ -79,13 +137,17 @@ header {
         padding-right: 50px;
     }
 
-    nav {
+    .nav-desktop {
         display: none !important;
     }
 
     .burger {
         display: block;
-        
+
+    }
+
+    .burger-menu {
+        display: flex;
     }
 
 }
