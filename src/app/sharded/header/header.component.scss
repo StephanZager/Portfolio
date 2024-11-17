@@ -100,6 +100,14 @@ a {
     z-index: 998;
     border-radius: 20px;
     animation: slideInDown 0.5s ease forwards;
+
+    @media(max-width: 400px) {
+        max-width: 100%;
+    }
+
+    @media(max-height: 700px) {
+        max-height: 100vh;
+    }
 }
 
 .burger-menu.closing {

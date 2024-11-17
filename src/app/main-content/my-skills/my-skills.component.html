@@ -19,6 +19,19 @@
         <div>
             <p>I have gained experience in building projects with different frontend technologies and concepts.</p>
         </div>
+
+
+        <div class="icon-skill-bar">
+            <div *ngFor="let skill of skills; let last = last" class="icons-container" [ngClass]="{'last-img': last}">
+                <img [src]="skill.skillImg" alt="">
+                <p [ngClass]="{'last-skill': last}">{{ skill.skillName }}</p>
+                <div *ngIf="last" class="continually-learning-popup">
+                    <img src="./../../../assets/img/my-skills/continually-learning-popup.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
         <div>            
             <h3>Looking for <span>another skill</span>?</h3>
             <p>Feel free to contact me. I look forward to expanding on my previous knowledge</p>
@@ -26,5 +39,7 @@
         <a href="#contact">
             <button>Get in touch</button>
         </a>
+
+        
     </div>
 </section>

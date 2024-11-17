@@ -48,6 +48,7 @@ section {
     align-items: flex-end;
     width: 570px;
     height: 400px;
+    margin-left: 60px;
 
     h3 {
         color: white;
@@ -64,6 +65,12 @@ section {
 
     p {
         font-size: 20px;
+    }
+
+    @media (max-width: 1490px){
+        p{
+            margin-right: 20px;
+        }
     }
 }
 
@@ -139,14 +146,15 @@ section {
 
 .continually-learning-popup {
     display: none;
-    &:hover { 
-        display: block;       
+
+    &:hover {
+        display: block;
         position: absolute;
         background: none;
         margin-top: 60px;
         margin-left: -5px;
     }
-   
+
 }
 
 button {
@@ -173,12 +181,40 @@ button {
 }
 
 
-.background-shadow{
+.background-shadow {
     position: absolute;
     left: 150px;
     bottom: 0;
     background: none;
     width: 550px;
     transform: rotate(30deg);
-    
+
+}
+
+.icon-skill-bar-mobile {
+    display: none;
+}
+
+@media (max-width: 1490px) {
+
+   
+
+    h3 {
+        margin-right: 20px !important;
+    }
+
+    button {
+        margin-right: 20px !important;
+    }
+}
+
+@media (max-width: 1380px) {
+    .icon-skill-bar {
+        max-width: 50%;
+        width: 100%;
+    }
+
+    h2{
+        font-size: 72px !important;
+    }
 }
