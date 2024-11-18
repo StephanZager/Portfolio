@@ -240,7 +240,7 @@ button {
 @media (max-width: 1023px) {
 
     .margin-top-mobile {
-        margin-top: 23px;
+        
 
     }
 
@@ -292,6 +292,10 @@ button {
         margin-right: 0px !important;
     }
 
+    h2 {
+        line-height: 54px !important;
+    }
+
 }
 
 @media (max-width: 530px) {
@@ -312,6 +316,7 @@ button {
 
     h2 {
         font-size: 45px !important;
+
     }
 
     p {
@@ -321,6 +326,7 @@ button {
     h3 {
         font-size: 24px !important;
         padding-left: 20px !important;
+
 
         span {
             font-size: 24px !important;

@@ -87,3 +87,21 @@
         background-color: #70E61C;
     }
 }
+
+
+@media (max-width: 1023px) {
+
+    .projects{
+        flex-direction: column !important;
+    }
+
+    .project-explanation{
+        align-items: center;
+        text-align: center;
+    }
+    
+    .buttons{
+        justify-content: center;
+    }
+}
+
