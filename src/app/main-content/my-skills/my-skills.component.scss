@@ -67,8 +67,8 @@ section {
         font-size: 20px;
     }
 
-    @media (max-width: 1490px){
-        p{
+    @media (max-width: 1490px) {
+        p {
             margin-right: 20px;
         }
     }
@@ -96,8 +96,10 @@ section {
     gap: 50px;
     display: flex;
     flex-wrap: wrap;
+    background: none;
+    z-index: 3;
 
-    p{
+    p {
         margin-right: 0px;
     }
 }
@@ -188,11 +190,22 @@ button {
 .background-shadow {
     position: absolute;
     left: 150px;
-    bottom: 0;
+    bottom: 100px;
     background: none;
-    width: 550px;
-    transform: rotate(30deg);
-    z-index: -1;
+    width: 450px;
+
+    z-index: 1;
+
+    @media (max-width: 700px) {
+        left: 0px;
+        width: 400px;
+    }
+
+    @media (max-width: 420px) {
+        left: 0px;
+        width: 100%;
+        bottom: 250px;
+    }
 
 }
 
@@ -202,7 +215,7 @@ button {
 
 @media (max-width: 1490px) {
 
-   
+
 
     h3 {
         margin-right: 20px !important;
@@ -219,94 +232,99 @@ button {
         width: 100%;
     }
 
-    h2{
+    h2 {
         font-size: 72px !important;
     }
 }
 
-@media (max-width: 1023px){
+@media (max-width: 1023px) {
 
-    .margin-top-mobile{
+    .margin-top-mobile {
         margin-top: 23px;
-        
+
     }
 
-    section{
+    section {
         padding-left: 0px;
         padding-top: 110px;
         height: 100%;
     }
-    .icon-skill-bar-desktop{
+
+    .icon-skill-bar-desktop {
         display: none;
     }
 
-    .icon-skill-bar-mobile{
+    .icon-skill-bar-mobile {
         display: flex;
         justify-content: center;
         max-width: 100%;
         height: 100%;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 40px;
+        margin-bottom: 40px;
         padding-right: 20px;
-    padding-left: 20px;
+        padding-left: 20px;
     }
 
-    .another-skill-section{
+    .another-skill-section {
         width: 100%;
         height: 100%;
         justify-content: normal;
         margin-left: 0px;
     }
 
-    a{
+    a {
         margin-top: 32px;
+        margin-bottom: 20px;
         width: 100%;
-    display: flex;
-    justify-content: center;
+        display: flex;
+        justify-content: center;
     }
 
-    .mobile-info{
+    .mobile-info {
         max-width: 600px;
         width: 100%;
         padding-left: 20px;
         padding-right: 20px;
-        margin-right: 0px !important;       
+        margin-right: 0px !important;
     }
 
     button {
         margin-right: 0px !important;
     }
-    
+
 }
 
-@media (max-width: 530px){
-    .icon-skill-bar{
+@media (max-width: 530px) {
+    .icon-skill-bar {
         height: 100%;
     }
 }
 
-@media (max-width: 450px){
+@media (max-width: 450px) {
 
-    .headline{
+    .headline {
         gap: 10px;
-        div{
+
+        div {
             width: 40px;
         }
     }
-    h2{
+
+    h2 {
         font-size: 45px !important;
     }
 
-    p{
+    p {
         font-size: 16px !important;
     }
 
-    h3{
+    h3 {
         font-size: 24px !important;
         padding-left: 20px !important;
-        span{
+
+        span {
             font-size: 24px !important;
-            
+
         }
     }
 }
