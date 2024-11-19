@@ -17,7 +17,59 @@ p {
     font-size: 18px;
 }
 
+/* Styling für Webkit-Browser (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 8px; 
+    height: 8px ; 
+}
 
+::-webkit-scrollbar-track {
+    background: #141D2F;
+    border-top: 2px solid #9747FF;
+    border-bottom: 2px solid #9747FF;
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+::-webkit-scrollbar-thumb {
+    background: #9747FF;
+    border-radius: 6px;
+    box-shadow: 0 0 30px #9747FF; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #9747FF;
+    box-shadow: 0 0 15px #9747FF; 
+}
+
+/* Styling für Firefox */
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #9747FF #141D2F;
+}
+
+body {
+    scrollbar-width: thin;
+    scrollbar-color: #9747FF #141D2F;
+}
+
+/* Styling für Internet Explorer und Edge */
+body::-ms-scrollbar {
+    width: 8px; 
+    height: 8px; 
+}
+
+body::-ms-scrollbar-track {
+    background: #141D2F;
+    border-top: 2px solid #9747FF;
+    border-bottom: 2px solid #9747FF;
+}
+
+body::-ms-scrollbar-thumb {
+    background: #9747FF;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #9747FF; 
+}
+
+body::-ms-scrollbar-thumb:hover {
+    background: #9747FF;
+    box-shadow: 0 0 15px #9747FF; 
+}
