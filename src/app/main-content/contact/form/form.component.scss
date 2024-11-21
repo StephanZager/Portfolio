@@ -16,7 +16,7 @@ form {
     input {
         background-repeat: no-repeat;
         background-position: right 10px center;
-        background-size: 24px 24px;       
+        background-size: 24px 24px;
     }
 
 
@@ -53,7 +53,7 @@ form {
 
         background-repeat: no-repeat;
         background-position: right 10px top 10px;
-        background-size: 24px 24px;     
+        background-size: 24px 24px;
 
         &:focus {
             border: $border-focus;
@@ -139,4 +139,28 @@ a {
             transform: translate(-50%, -50%) scale(1);
         }
     }
+}
+
+@media(max-width: 1023px) {
+    form {
+        max-width: 100%;
+    }
+
+    
+}
+
+@media(max-width: 450px) {
+    button {
+        width: 195px !important;
+        height: 50px !important;
+        font-size: 16px !important;
+    }
+
+   input{
+         font-size: 16px !important;
+   }
+
+   textarea{
+       font-size: 16px !important;
+   }
 }

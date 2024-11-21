@@ -1,12 +1,12 @@
 import { Component, HostListener } from '@angular/core';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { CommonModule } from '@angular/common';
-import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [NavBarComponent, CommonModule, MatSlideToggleModule],
+  imports: [NavBarComponent, CommonModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
