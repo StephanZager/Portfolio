@@ -72,13 +72,21 @@ form {
         height: 60px;
         font-size: 23px;
         color: white;
+        z-index: 3;
 
 
         &:disabled {
             background-color: #ccc;
             color: #333;
+            cursor: not-allowed;
 
         }
+
+        &:not(:disabled):hover {
+            background-color: #9747FF;
+            transform: scale(1.1);
+        }
+        
     }
 }
 

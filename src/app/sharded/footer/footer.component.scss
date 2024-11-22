@@ -1,4 +1,5 @@
 footer {
+    z-index: 3;
     width: 100%;
     height: 290px;
 
@@ -40,6 +41,26 @@ footer {
     background-color: #70E61C;
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
+}
+
+.mobile-legal-notice {
+    display: none;
+}
+
+
+@media(max-width: 800px){
+    .footer-bar {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .desktop-legal-notice {
+        display: none;
+    }
+
+    .mobile-legal-notice {
+        display: block;
+    }
 }
 
 

@@ -31,7 +31,7 @@
             required></textarea>
 
         @if(!message.valid && message.touched){
-        <span class="error-message">Please enter a message</span>
+        <span  class="error-message">Please enter a message</span>
         }
     </div>
 
@@ -39,11 +39,11 @@
     <div class="checkbox form-group">
         <input #checkbox="ngModel" [(ngModel)]="contactData.check" [checked]="contactData.check == true" type="checkbox"
             id="confirmation" name="interest" value="music" required />
-        <label for="confirmation">I've read the <a href="#">privacy policy</a> and agree to the processing of my data as
+        <label  for="confirmation">I've read the <a href="#">privacy policy</a> and agree to the processing of my data as
             outlined. </label>
 
         @if(contactData.check == false && checkbox.touched){
-        <span class="error-message">Please enter a message</span>
+        <span style="background: none;"  class="error-message">Please enter a message</span>
         }
     </div>
 
