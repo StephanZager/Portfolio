@@ -30,7 +30,7 @@ export class HeaderComponent {
   @HostListener('document:click', ['$event'])
   onDocumentClick(event: MouseEvent) {
     const target = event.target as HTMLElement;
-    const isClickInsideMenu = target.closest('.burger-menu') || target.closest('.burger');
+    const isClickInsideMenu = target.closest('.burger-menu') || target.closest('.burger') || target.closest('.toggle-switch');
     if (!isClickInsideMenu) {
       this.isBurgerMenuOpen = false;
     }

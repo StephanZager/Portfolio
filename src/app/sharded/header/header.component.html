@@ -4,9 +4,18 @@
     <nav class="nav-desktop">
         <a href="#about-me">About me</a>
         <a href="#skills">Skills</a>
-        <a href="#portfolio">Portfolio</a>            
+        <a href="#portfolio">Portfolio</a>
+        
+        <div class="toggle-switch">
+            <span class="toggle-label left">EN</span>
+            <input type="checkbox" id="language-switch" role="switch">
+            <label for="language-switch"></label>
+            <span class="toggle-label right">DE</span>
+        </div>
+                
     </nav>
 
+    
 
     <div (click)="toggleBurgerMenu()" class="burger">
         <div class="line1"></div>
@@ -20,4 +29,11 @@
     <a href="#skills" (click)="toggleBurgerMenu()">My skills</a>
     <a href="#portfolio" (click)="toggleBurgerMenu()">Portfolio</a>
     <a href="#contact" (click)="toggleBurgerMenu()">Contact</a>
+
+    <div class="toggle-switch">
+        <span class="toggle-label left">EN</span>
+        <input type="checkbox" id="language-switch" role="switch">
+        <label for="language-switch"></label>
+        <span class="toggle-label right">DE</span>
+    </div>
 </nav>
