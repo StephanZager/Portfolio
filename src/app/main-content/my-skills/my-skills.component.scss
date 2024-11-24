@@ -17,6 +17,8 @@
     }
 }
 
+
+
 p {
     color: white;
 }
@@ -48,13 +50,14 @@ section {
     align-items: flex-end;
     width: 570px;
     height: 400px;
-    margin-left: 60px;
+    margin-left: 30px;
 
     h3 {
         color: white;
         font-size: 32px;
         font-weight: 700;
         margin-bottom: 16px;
+        padding-right: 100px;
     }
 
     span {
@@ -68,10 +71,16 @@ section {
     }
 
     @media (max-width: 1490px) {
-        p {
-            margin-right: 20px;
-        }
+        
     }
+}
+
+a{
+    padding-right: 100px;
+}
+
+.mobile-info {
+    padding-right: 100px;
 }
 
 .headline {
@@ -163,6 +172,11 @@ section {
 
 }
 
+.padding {
+    
+    padding-right: 100px !important;
+}
+
 button {
     display: flex;
     align-items: center;
@@ -177,6 +191,8 @@ button {
     font-weight: 400;
     transition: transform 0.2s ease, background-color 0.2s ease;
     position: relative;
+
+    
 
 
     &:hover {
@@ -218,11 +234,11 @@ button {
 
 
     h3 {
-        margin-right: 20px !important;
+        
     }
 
     button {
-        margin-right: 20px !important;
+        
     }
 }
 
@@ -237,12 +253,44 @@ button {
     }
 }
 
+
+@media (max-width: 1270px){
+    .icon-skill-bar {
+        max-width: 400px;
+        width: 100%;
+    }
+}
+
 @media (max-width: 1023px) {
 
-    .margin-top-mobile {
-        
+    .headline{
+        margin-bottom: 40px;
+        gap: 20px;
 
+        div{
+            width: 55px;
+        }
     }
+
+    h3 {
+        padding-right: 75px !important;
+    }
+    .icon-skill-bar-mobile{
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+
+    .mobile-info{
+        padding-left: 75px !important;
+        padding-right: 75px !important;
+    }
+
+    .padding {
+        padding-left: 75px !important;
+        padding-right: 75px !important;
+    }
+
+    
 
     section {
         padding-left: 0px;
@@ -261,8 +309,8 @@ button {
         height: 100%;
         margin-top: 40px;
         margin-bottom: 40px;
-        padding-right: 20px;
-        padding-left: 20px;
+        padding-right: 100px;
+        padding-left: 100px;
     }
 
     .another-skill-section {
@@ -273,6 +321,7 @@ button {
     }
 
     a {
+        padding-right: 0px;
         margin-top: 32px;
         margin-bottom: 20px;
         width: 100%;
@@ -283,8 +332,8 @@ button {
     .mobile-info {
         max-width: 600px;
         width: 100%;
-        padding-left: 20px;
-        padding-right: 20px;
+       
+        padding-right: 100px;
         margin-right: 0px !important;
     }
 
@@ -298,19 +347,75 @@ button {
 
 }
 
+
+
+@media(max-width: 700px){
+
+    h3 {
+        padding-right: 50px !important;
+    }
+    .icon-skill-bar-mobile{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .mobile-info{
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+    }
+
+    .padding {
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+    }
+
+    .headline{
+        
+        gap: 10px;
+
+        div{
+            width: 40px;
+        }
+    }
+}
+
 @media (max-width: 530px) {
     .icon-skill-bar {
         height: 100%;
     }
 }
 
+@media (max-width: 480px){
+
+    .icon-skill-bar-mobile{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
 @media (max-width: 450px) {
+
+    .padding {
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+    }
+
+    .icon-skill-bar-mobile{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .mobile-info{
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+    }
 
     .headline {
         gap: 10px;
+        margin-bottom: 20px;
 
         div {
-            width: 40px;
+            width: 15px;
         }
     }
 
@@ -325,7 +430,8 @@ button {
 
     h3 {
         font-size: 24px !important;
-        padding-left: 20px !important;
+        padding-left: 25px !important;
+        padding-right: 25px !important;
 
 
         span {
