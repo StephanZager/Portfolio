@@ -2,13 +2,13 @@
     <img src="./../../../assets/img/Logo.png" alt="">
 
     <nav class="nav-desktop">
-        <a href="#about-me">About me</a>
+        <a href="#about-me">{{ 'nav.ABOUT_ME' | translate }}</a>
         <a href="#skills">Skills</a>
         <a href="#portfolio">Portfolio</a>
         
         <div class="toggle-switch">
             <span class="toggle-label left">EN</span>
-            <input type="checkbox" id="language-switch" role="switch">
+            <input type="checkbox" id="language-switch" role="switch" (change)="switchLanguage($event)">
             <label for="language-switch"></label>
             <span class="toggle-label right">DE</span>
         </div>
@@ -25,10 +25,10 @@
 </header>
 
 <nav [ngClass]="{'burger-menu': true, 'closing': isClosing}" *ngIf="isBurgerMenuOpen || isClosing">
-    <a href="#about-me" (click)="toggleBurgerMenu()">About me</a>
-    <a href="#skills" (click)="toggleBurgerMenu()">My skills</a>
+    <a href="#about-me" (click)="toggleBurgerMenu()">{{ 'nav.ABOUT_ME' | translate }}</a>
+    <a href="#skills" (click)="toggleBurgerMenu()">{{ 'nav.MY_SKILLS' | translate }}</a>
     <a href="#portfolio" (click)="toggleBurgerMenu()">Portfolio</a>
-    <a href="#contact" (click)="toggleBurgerMenu()">Contact</a>
+    <a href="#contact" (click)="toggleBurgerMenu()">{{ 'nav.CONTACT' | translate }}</a>
 
     <div class="toggle-switch">
         <span class="toggle-label left">EN</span>

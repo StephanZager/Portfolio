@@ -1,0 +1,14 @@
+{
+  "nav": {    
+    "ABOUT_ME": "About me",
+    "SKILLS": "Skills",
+    "MY_SKILLS": "My skills",
+    "PORTFOLIO": "Portfolio",
+    "CONTACT": "Contact"
+  },
+  "about_me": {
+    "TITLE": "About me"
+
+  }
+  
+}
