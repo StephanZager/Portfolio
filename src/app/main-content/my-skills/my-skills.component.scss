@@ -25,7 +25,7 @@ p {
 
 h2 {
     color: white;
-    font-size: 90px;
+   
     font-weight: 700;
 
 }
@@ -139,6 +139,7 @@ a{
         font-weight: 700;
         text-align: center;
         background: none;
+        line-height: 20px !important;
     }
 }
 
@@ -412,7 +413,7 @@ button {
 
     .headline {
         gap: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 32px;
 
         div {
             width: 15px;
