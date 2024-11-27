@@ -1,4 +1,4 @@
-<section id="about-me">
+<section>
     <div class="background-shadow">
         <img  src="./../../../assets/img/background-shadow/purple-shadow-about-me.png"
             alt="Background Shadow">
@@ -6,14 +6,12 @@
     <div class="about-me">
         <h3>{{ 'about_me.TITLE' | translate }}</h3>
         <div class="about-me-info">
-            <p class="person-info">Hi, I’m a german speaking Frontend Developer based near Munich. Motivated by the
-                limitless opportunities
-                within IT, I am excited about crafting visually captivating and intuitive websites and applications.
+            <p class="person-info">{{ 'about_me.ABOUT_ME' | translate }}
             </p>
 
             <div *ngFor="let mindset of mindsets" class="mindset">
                 <img [src]="mindset.imgSrc" alt="">
-                <p>{{ mindset.text }}</p>
+                <p>{{ 'about_me.' + mindset.text | translate }}</p>
             </div>
         </div>
 
