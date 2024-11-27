@@ -1,16 +1,23 @@
 div {
 
+    z-index: 3;
+    background: none;
     gap: 30px;
     display: flex;
     justify-content: space-around;
-    
+
     a {
+        z-index: 3;
+        background: none;
+
         &:hover {
             transform: scale(1.1);
         }
     }
 
     img {
+        z-index: 3;
+        background: none;
         background: none;
         width: 30px;
         height: 30px;
