@@ -10,7 +10,7 @@
 
 section {
     position: relative;
-    padding-top: 124px;
+    margin-top: 124px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -200,7 +200,7 @@ section {
 
 @media (max-width: 525px){
     h3{
-        line-height: 70px !important;
+        
         margin-bottom: 20px;
     }
 }

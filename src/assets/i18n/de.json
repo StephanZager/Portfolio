@@ -2,7 +2,7 @@
   "nav": {
     "ABOUT_ME": "Über mich",
     "SKILLS": "Fähigkeiten",
-    "MY_SKILLS": "Meine skills",
+    "MY_SKILLS": "Fähigkeiten",
     "PORTFOLIO": "Portfolio",
     "CONTACT": "Kontakt"
   },
@@ -18,5 +18,16 @@
     "LOCATION": "Flexibel in Bezug auf Arbeitsumgebungen kann ich sowohl vor Ort in Stendal als auch remote effektiv arbeiten.",
     "CHALLENGE": "Ich bin aufgeschlossen und stets auf der Suche nach persönlichen Herausforderungen, um mein Wissen und meine Fähigkeiten kontinuierlich zu verbessern.",
     "MISSION":"In meinem Beruf geht es beim Programmieren nicht nur darum, Code zu schreiben; es ist eine kreative Form der Problemlösung. Ich bin stolz darauf, komplexe technische Herausforderungen in einfache, benutzerfreundliche Lösungen zu verwandeln. Auf diese Weise helfe ich Ihnen, Ihre Ziele zu erreichen und Ihre Visionen zum Leben zu erwecken."
+  },
+  "my_skills": {
+    "TITLE": "Fähigkeiten", 
+    "EXPERIENCE": "Ich habe Erfahrungen in der Umsetzung von Projekten mit verschiedenen Frontend-Technologien und Konzepten gesammelt.",
+    "UNDER_HEADING": {
+      "P": "Suchen Sie nach einer",
+      "SPAN": "weiteren Fähigkeit"
+    },
+    "CONTACT_ME" : "Gerne können Sie mich kontaktieren. Ich freue mich darauf, mein bisheriges Wissen weiter auszubauen.",
+    "CONTINUALLY_LEARNING":"Kontinuierliches Lernen",
+    "BUTTON":"Kontaktieren Sie mich"
   }
 }

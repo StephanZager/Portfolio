@@ -3,7 +3,7 @@
     <div class="icon-skill-bar icon-skill-bar-desktop">
         <div *ngFor="let skill of skills; let last = last" class="icons-container" [ngClass]="{'last-img': last}">
             <img [src]="skill.skillImg" alt="">
-            <p [ngClass]="{'last-skill': last}">{{ skill.skillName }}</p>
+            <p [ngClass]="{'last-skill': last}">{{ skill.skillName | translate }}</p>
             <div *ngIf="last" class="continually-learning-popup">
                 <img src="./../../../assets/img/my-skills/continually-learning-popup.png" alt="">
             </div>
@@ -13,18 +13,18 @@
     <div class="another-skill-section">
         
         <div class="headline">
-            <h2>My skills</h2>
+            <h2>{{'my_skills.TITLE' | translate}}</h2>
             <div></div>
         </div>
         <div style="background: none;">
-            <p class="mobile-info padding">I have gained experience in building projects with different frontend technologies and concepts.</p>
+            <p class="mobile-info padding">{{'my_skills.EXPERIENCE' | translate}}</p>
         </div>
 
 
         <div class="icon-skill-bar icon-skill-bar-mobile">
             <div *ngFor="let skill of skills; let last = last" class="icons-container" [ngClass]="{'last-img': last}">
                 <img [src]="skill.skillImg" alt="">
-                <p  [ngClass]="{'last-skill': last}">{{ skill.skillName }}</p>
+                <p  [ngClass]="{'last-skill': last}">{{ skill.skillName | translate }}</p>
                 <div *ngIf="last" class="continually-learning-popup">
                     <img src="./../../../assets/img/my-skills/continually-learning-popup.png" alt="">
                 </div>
@@ -32,12 +32,12 @@
         </div>
 
 
-        <div style="z-index: 4; background: none;">            
-            <h3 style="z-index: 4; background: none;">Looking for <span>another skill</span>?</h3>
-            <p style="z-index: 4; background: none;" class="mobile-info">Feel free to contact me. I look forward to expanding on my previous knowledge</p>
+        <div style="z-index: 4; background: none; display: flex; align-items: flex-end; flex-direction: column;">            
+            <h3 style="z-index: 4; background: none;">{{'my_skills.UNDER_HEADING.P' | translate}} <span>{{'my_skills.UNDER_HEADING.SPAN' | translate}}</span>?</h3>
+            <p style="z-index: 4; background: none;" class="mobile-info">{{'my_skills.CONTACT_ME' | translate}}</p>
         </div>
         <a href="#contact">
-            <button>Get in touch</button>
+            <button>{{'my_skills.BUTTON' | translate}}</button>
         </a>
 
         
