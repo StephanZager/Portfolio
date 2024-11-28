@@ -35,5 +35,20 @@
       "ELPOLLO_DESCRIPTION" :"A simple Jump-and-Run game based on an object-oriented approach. Help Pedro find coins and poison bottles to fight against the killer chicken."    
       
     }
+  },
+  "contact": {
+    "TITLE": "Contact",
+    "SUBTITLE": "Got a problem to solve?",
+    "DESCRIPTION":"Contact me through this form. I am interested in hearing from you, knowing your ideas, and contributing to your projects with my work.",
+    "CONTACT_ME":{
+      "P": "Need a Frontend developer? ",
+      "SPAN": "Contact me!"
+    },   
+    "FORM": {
+      "NAME": "Name",
+      "EMAIL": "Email",
+      "MESSAGE": "Message",
+      "BUTTON": "Send"
+    }
   }
 }

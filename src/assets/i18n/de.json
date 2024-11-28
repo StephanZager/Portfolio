@@ -37,5 +37,20 @@
       "ELPOLLO_DESCRIPTION" :"Ein einfaches Jump-and-Run-Spiel basierend auf objektorientiertem Programmieren. Hilf Pedro, Münzen und Giftflaschen zu finden, um gegen das Killerhuhn zu kämpfen."    
       
     }
+  },
+  "contact": {
+    "TITLE": "Kontakt",
+    "SUBTITLE": "Haben sie ein Problem zu lösen?",
+    "DESCRIPTION":"Kontaktieren Sie mich über dieses Formular. Ich bin daran interessiert, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+    "CONTACT_ME":{
+      "P": "Brauchen sie einen Frontend-Entwickler?",
+      "SPAN": "Kontaktieren sie mich!"
+    }, 
+    "FORM": {
+      "NAME": "Name",
+      "EMAIL": "Email",
+      "MESSAGE": "Message",
+      "BUTTON": "Send"
+    }
   }
 }

@@ -3,16 +3,15 @@
     <img class="background-shadow" src="./../../../assets/img/background-shadow/purple-shadow-footer.png" alt="">
     <div class="headline">
         <div class="seperator"></div>
-        <h2>Contact</h2>
+        <h2>{{ 'contact.TITLE' | translate }}</h2>
     </div>
     
 
     <div class="contact-section">
         <div class="contact-info">
-            <h3>Got a problem to solve?</h3>
-            <p>Contact me through this form. I am interested in hearing from you, knowing your ideas, and contributing
-                to your projects with my work.</p>
-            <p>Need a Frontend developer? <b style="background: none;">Contact me!</b></p>
+            <h3>{{ 'contact.SUBTITLE' | translate }}</h3>
+            <p>{{ 'contact.DESCRIPTION' | translate }}</p>
+            <p>{{ 'contact.CONTACT_ME.P' | translate }} <b style="background: none;">{{ 'contact.CONTACT_ME.SPAN' | translate }}</b></p>
         </div>
         <div class="form-section">
             <app-form></app-form>
