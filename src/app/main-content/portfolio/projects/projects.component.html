@@ -6,7 +6,7 @@
             <div class="project-explanation">
                 <h3>{{project.name}}</h3>
                 <span>{{project.programmingLanguage.join(' | ')}}</span>
-                <p>{{project.description}}</p>
+                <p>{{project.description | translate}}</p>
             </div>
             <div class="buttons">
                 <a [href]="project.linkLive" target="_blank">

@@ -27,5 +27,13 @@
     "CONTACT_ME" : "Feel free to contact me. I look forward to expanding on my previous knowledge.",
     "CONTINUALLY_LEARNING":"Continually learning",
     "BUTTON":"Get in touch"
+  },
+  "portfolio": {
+    "SELECTION_WORK":"Explore a selection of my work here - Interact with projects to see my skills in action.",
+    "PROJECT": {      
+      "JOIN_DESCRIPTION": "Task manager, inspired by the Kanban System. Create and organize tasks using drag-and-drop functions, assign users and categories.",
+      "ELPOLLO_DESCRIPTION" :"A simple Jump-and-Run game based on an object-oriented approach. Help Pedro find coins and poison bottles to fight against the killer chicken."    
+      
+    }
   }
 }

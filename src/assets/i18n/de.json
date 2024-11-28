@@ -29,5 +29,13 @@
     "CONTACT_ME" : "Gerne können Sie mich kontaktieren. Ich freue mich darauf, mein bisheriges Wissen weiter auszubauen.",
     "CONTINUALLY_LEARNING":"Kontinuierliches Lernen",
     "BUTTON":"Kontaktieren Sie mich"
+  },
+  "portfolio": {
+    "SELECTION_WORK":"Entdecken Sie hier eine Auswahl meiner Arbeiten – interagieren Sie mit den Projekten, um meine Fähigkeiten in Aktion zu erleben.",
+    "PROJECT": {      
+      "JOIN_DESCRIPTION": "Task-Manager, inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu." ,
+      "ELPOLLO_DESCRIPTION" :"Ein einfaches Jump-and-Run-Spiel basierend auf objektorientiertem Programmieren. Hilf Pedro, Münzen und Giftflaschen zu finden, um gegen das Killerhuhn zu kämpfen."    
+      
+    }
   }
 }
