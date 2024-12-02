@@ -3,35 +3,34 @@
     <div class="form-group">
         <input [ngStyle]="{'border':(!name.valid && name.touched ? borderError : '') || (name.valid ? borderSuccess : ''),
             'background-image': (!name.valid && name.touched ? bgError : name.valid ? bgSuccess : ''),           
-        }" #name="ngModel" [(ngModel)]="contactData.name" type="text" name="user_name" placeholder="Your name"
-            required />
+        }" #name="ngModel" [(ngModel)]="contactData.name" type="text" name="user_name"
+            placeholder="{{ 'contact.FORM.NAME' | translate }}" required />
 
         @if(!name.valid && name.touched){
-        <span class="error-message">Please enter a name</span>
+        <span class="error-message">{{ 'contact.FORM.ERROR.NAME' | translate }}</span>
         }
     </div>
 
     <div class="form-group">
         <input [ngStyle]="{'border':(!email.valid && email.touched ? borderError : '') || (email.valid ? borderSuccess : ''),
             'background-image': (!email.valid && email.touched ? bgError : email.valid ? bgSuccess : ''),
-            }" #email="ngModel" [(ngModel)]="contactData.email" type="email" name="user_email" placeholder="Your email"
-            required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" />
+            }" #email="ngModel" [(ngModel)]="contactData.email" type="email" name="user_email"
+            placeholder="{{ 'contact.FORM.EMAIL' | translate }}" required
+            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" />
 
         @if(!email.valid && email.touched){
-        <span class="error-message">Please enter a eMail</span>
+        <span class="error-message">{{ 'contact.FORM.ERROR.EMAIL' | translate }}</span>
         }
     </div>
 
     <div class="form-group">
-        <textarea
-            [ngStyle]="{'border':(!message.valid && message.touched ? borderError : '') || (message.valid ? borderSuccess : ''),
+        <textarea [ngStyle]="{'border':(!message.valid && message.touched ? borderError : '') || (message.valid ? borderSuccess : ''),
             'background-image': (!message.valid && message.touched ? bgError : message.valid ? bgSuccess : ''),
-            }"
-            #message="ngModel" [(ngModel)]="contactData.message" name="user_message" placeholder="Your message"
-            required></textarea>
+            }" #message="ngModel" [(ngModel)]="contactData.message" name="user_message"
+            placeholder="{{ 'contact.FORM.MESSAGE' | translate }}" required></textarea>
 
         @if(!message.valid && message.touched){
-        <span  class="error-message">Please enter a message</span>
+        <span class="error-message">{{ 'contact.FORM.ERROR.MESSAGE' | translate }}</span>
         }
     </div>
 
@@ -39,15 +38,16 @@
     <div class="checkbox form-group">
         <input #checkbox="ngModel" [(ngModel)]="contactData.check" [checked]="contactData.check == true" type="checkbox"
             id="confirmation" name="interest" value="music" required />
-        <label  for="confirmation">I've read the <a href="#">privacy policy</a> and agree to the processing of my data as
-            outlined. </label>
+        <label for="confirmation">{{ 'contact.FORM.PRVIACY_POLICY.FIRST_TEXT' | translate }}
+            <a href="#">{{ 'contact.FORM.PRVIACY_POLICY.PRIVACY_POLICY_LINK' | translate }}</a>
+            {{ 'contact.FORM.PRVIACY_POLICY.LAST_TEXT' | translate }} </label>
 
         @if(contactData.check == false && checkbox.touched){
-        <span style="background: none;"  class="error-message">Please enter a message</span>
+        <span style="background: none;" class="error-message">{{ 'contact.FORM.ERROR.PRIVACY_POLICY' | translate }}</span>
         }
     </div>
 
     <button [disabled]="(!contactData.check || !message.valid || !name.valid || !email.valid)" type="submit"
-        value="submit">Send message :)</button>
+        value="submit">{{ 'contact.FORM.BUTTON' | translate }}</button>
 
 </form>

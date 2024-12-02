@@ -47,10 +47,21 @@
       "SPAN": "Kontaktieren sie mich!"
     }, 
     "FORM": {
-      "NAME": "Name",
-      "EMAIL": "Email",
-      "MESSAGE": "Message",
-      "BUTTON": "Send"
+      "ERROR": {
+        "NAME": "Bitte geben Sie Ihren Namen ein",
+        "EMAIL": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+        "MESSAGE": "Bitte geben Sie eine Nachricht ein",
+        "PRIVACY_POLICY": "Bitte akzeptieren Sie die Datenschutzbestimmungen"
+      },
+      "NAME": "Dein Name ",
+      "EMAIL": "Deine EMail",
+      "MESSAGE": "Deine Nachricht",
+      "PRVIACY_POLICY": {
+        "FIRST_TEXT": "Ich habe die",
+        "PRIVACY_POLICY_LINK": "Datenschutzerklärung",
+        "LAST_TEXT": "gelesen und stimme zu."
+      },
+      "BUTTON": "Nachricht senden :)"
     }
   }
 }

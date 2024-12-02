@@ -22,33 +22,43 @@
     "EXPERIENCE": "I have gained experience in building projects with different frontend technologies and concepts.",
     "UNDER_HEADING": {
       "P": "Looking for",
-      "SPAN":"another skill"      
+      "SPAN": "another skill"
     },
-    "CONTACT_ME" : "Feel free to contact me. I look forward to expanding on my previous knowledge.",
-    "CONTINUALLY_LEARNING":"Continually learning",
-    "BUTTON":"Get in touch"
+    "CONTACT_ME": "Feel free to contact me. I look forward to expanding on my previous knowledge.",
+    "CONTINUALLY_LEARNING": "Continually learning",
+    "BUTTON": "Get in touch"
   },
   "portfolio": {
-    "SELECTION_WORK":"Explore a selection of my work here - Interact with projects to see my skills in action.",
-    "PROJECT": {      
+    "SELECTION_WORK": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+    "PROJECT": {
       "JOIN_DESCRIPTION": "Task manager, inspired by the Kanban System. Create and organize tasks using drag-and-drop functions, assign users and categories.",
-      "ELPOLLO_DESCRIPTION" :"A simple Jump-and-Run game based on an object-oriented approach. Help Pedro find coins and poison bottles to fight against the killer chicken."    
-      
+      "ELPOLLO_DESCRIPTION": "A simple Jump-and-Run game based on an object-oriented approach. Help Pedro find coins and poison bottles to fight against the killer chicken."
     }
   },
   "contact": {
     "TITLE": "Contact",
     "SUBTITLE": "Got a problem to solve?",
-    "DESCRIPTION":"Contact me through this form. I am interested in hearing from you, knowing your ideas, and contributing to your projects with my work.",
-    "CONTACT_ME":{
+    "DESCRIPTION": "Contact me through this form. I am interested in hearing from you, knowing your ideas, and contributing to your projects with my work.",
+    "CONTACT_ME": {
       "P": "Need a Frontend developer? ",
       "SPAN": "Contact me!"
-    },   
+    },
     "FORM": {
-      "NAME": "Name",
-      "EMAIL": "Email",
-      "MESSAGE": "Message",
-      "BUTTON": "Send"
+      "ERROR": {
+        "NAME": "Please enter your name",
+        "EMAIL": "Please enter a valid email address",
+        "MESSAGE": "Please enter a message",
+        "PRIVACY_POLICY": "Please accept the privacy policy"
+      },
+      "NAME": "Your name",
+      "EMAIL": "Your email",
+      "MESSAGE": "Your message",
+      "PRVIACY_POLICY": {
+        "FIRST_TEXT": "I've read the",
+        "PRIVACY_POLICY_LINK": "Privacy Policy",
+        "LAST_TEXT": "and agree to the processing of my data as outlined."
+      },
+      "BUTTON": "Send message :)"
     }
   }
 }
