@@ -22,6 +22,10 @@ h2, h3 {
         font-size: 60px !important;
     }
 
+    @media (max-width: 700x) {
+        font-size: 55px !important;
+    }
+
     @media (max-width: 450px) {
         font-size: 45px !important;
     }

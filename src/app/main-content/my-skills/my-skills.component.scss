@@ -23,13 +23,7 @@ p {
     color: white;
 }
 
-h2 {
 
-   
-
-    
-
-}
 
 
 section {
@@ -55,7 +49,7 @@ section {
     height: 100%;
     margin-left: 30px;
 
-    h3 {
+    h4 {
         color: white;
         font-size: 32px;
         font-weight: 700;
@@ -238,9 +232,6 @@ button {
 
 
 
-    h3 {
-        
-    }
 
     button {
         
@@ -275,7 +266,7 @@ button {
         }
     }
 
-    h3 {
+    h4 {
         padding-right: 75px !important;
     }
     .icon-skill-bar-mobile{
@@ -352,8 +343,14 @@ button {
 
 @media(max-width: 700px){
 
-    h3 {
+    h4 {
         padding-right: 50px !important;
+        padding-left: 50px !important;
+        font-size: 26px !important;
+    }
+
+    span{
+        font-size: 26px !important;
     }
     .icon-skill-bar-mobile{
         padding-left: 50px;
@@ -420,16 +417,13 @@ button {
         }
     }
 
-    h2 {
-      
-
-    }
+   
 
     p {
         font-size: 16px !important;
     }
 
-    h3 {
+    h4 {
         font-size: 24px !important;
         padding-left: 25px !important;
         padding-right: 25px !important;
