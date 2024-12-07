@@ -21,5 +21,19 @@ export class AppComponent {
     this.translate.setDefaultLang('en');
     
 }
+
+scrollToSection(sectionId: string) {
+  const element = document.getElementById(sectionId);
+  if (element) {
+    const headerOffset = 110; 
+    const elementPosition = element.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    });
+  }
+}
   
 }

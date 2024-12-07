@@ -1,14 +1,15 @@
+
 <div class="lading-screen">
     <div class="lading-section">
         <div class="profile-picture">
-            <img class="profile-img" src="./../../../assets/img/lading-page/hero character photo.png" alt="">
+            <img class="profile-img" src="./../../../assets/img/lading-page/stephan-ladingpage.png" alt="">
             <img class="photo-shadow" src="./../../../assets/img/lading-page/photo-shadows.png" alt="">
         </div>
 
         <div class="headline">
             <div style="display: flex; align-items: center;">
                 <div>
-                    <p>I am</p>
+                    <p>{{ 'lading_page.TITLE' | translate }}</p>
                 </div>
                 <div>
                     <h1>Stephan Zager</h1>
@@ -16,15 +17,19 @@
                 </div>
             </div>
             <a href="#contact">
-                <button>Let's talk!</button>
+                <button>{{ 'lading_page.BUTTON' | translate }}</button>
             </a>
         </div>
 
+       
+
     </div>
 
-    <div>
-        <img class="background-img" src="./../../../assets/img/lading-page/hero-background.png" alt="">
-    </div>
+
+    
+    <img class="background-img" src="./../../../assets/img/lading-page/hero-background.png" alt="">
+    
+    
     <div class="icon-bar">
         <div class="seperator"></div>
         <app-icon-bar style="z-index: 3; background: none;"></app-icon-bar>

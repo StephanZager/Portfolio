@@ -100,13 +100,16 @@ section {
     overflow: hidden;
     display: flex;
     justify-content: center;
-    align-items: center;
+ 
     margin-left: 20px;
+    height: 400px;
+    width: 400px;
 
     img {
         width: 100%;
-        height: 100%;
+        height: 119%;
         background: none;
+        object-fit: none;
     }
 }
 
@@ -142,6 +145,15 @@ section {
 @media (max-width: 1270px){
     .seperator{
         width: 100px;
+    }
+
+    .img{
+        height: 340px;
+        width: 340px;
+
+       img {
+              height: 130%;
+        }
     }
 }
 

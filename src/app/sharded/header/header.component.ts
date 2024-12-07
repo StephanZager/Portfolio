@@ -21,6 +21,8 @@ export class HeaderComponent {
     this.translate.setDefaultLang('en');
   }
 
+  
+
   switchLanguage(event: Event) {
     const input = event.target as HTMLInputElement;
     const language = input.checked ? 'de' : 'en';
