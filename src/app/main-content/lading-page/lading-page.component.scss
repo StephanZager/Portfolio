@@ -260,6 +260,12 @@ h2 {
     }
 }
 
+@media (max-width: 460px){
+    .profile-picture{
+        margin-top: 90px;
+    }
+}
+
 @media (max-width: 450px) {
     h1 {
         font-size: 45px;
@@ -278,6 +284,8 @@ h2 {
     }
 }
 
+
+
 @media (max-width: 385px) {
     h1 {
         font-size: 37px;
@@ -294,4 +302,34 @@ h2 {
 
 
     }
+
+    
+}
+
+@media (max-width: 360px){
+    .profile-picture{
+        margin-top: 110px;
+    }
+
+}
+
+@media (max-width: 345px){
+    .profile-picture{
+        margin-top: 120px;
+    }
+
+}
+
+@media (max-width: 335px){
+    .profile-picture{
+        margin-top: 130px;
+    }
+
+}
+
+@media (max-width: 327px){
+    .profile-picture{
+        margin-top: 140px;
+    }
+
 }
