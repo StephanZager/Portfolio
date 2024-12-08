@@ -39,7 +39,7 @@
         <input #checkbox="ngModel" [(ngModel)]="contactData.check" [checked]="contactData.check == true" type="checkbox"
             id="confirmation" name="interest" value="music" required />
         <label for="confirmation">{{ 'contact.FORM.PRVIACY_POLICY.FIRST_TEXT' | translate }}
-            <a href="#">{{ 'contact.FORM.PRVIACY_POLICY.PRIVACY_POLICY_LINK' | translate }}</a>
+            <a href="privacy">{{ 'contact.FORM.PRVIACY_POLICY.PRIVACY_POLICY_LINK' | translate }}</a>
             {{ 'contact.FORM.PRVIACY_POLICY.LAST_TEXT' | translate }} </label>
 
         @if(contactData.check == false && checkbox.touched){
