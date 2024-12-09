@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FooterComponent } from '../sharded/footer/footer.component';
 import { Location } from '@angular/common';
+import { ViewEncapsulation } from '@angular/core';
 
 
 
@@ -9,7 +10,8 @@ import { Location } from '@angular/common';
   standalone: true,
   imports: [FooterComponent],
   templateUrl: './privacy-policy.component.html',
-  styleUrl: './privacy-policy.component.scss'
+  styleUrls: ['./privacy-policy.component.scss'],
+  encapsulation: ViewEncapsulation.ShadowDom
 })
 export class PrivacyPolicyComponent {
 

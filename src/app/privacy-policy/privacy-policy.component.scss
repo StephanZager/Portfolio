@@ -1,0 +1,86 @@
+#privacy {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    height: 100%;
+    max-width: 1440px;
+
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 125px;
+    margin-bottom: 110px;
+
+    div {
+        width: 100%;
+        text-align: left;
+
+        word-wrap: break-word;
+        /* Fügt den automatischen Zeilenumbruch hinzu */
+        overflow-wrap: break-word;
+        /* Fügt den automatischen Zeilenumbruch hinzu */
+    }
+
+    h1 {
+        margin-top: 90px;
+        font-size: 2.5em;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    h4 {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 120px;
+    background-color: #70E61C;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px !important;
+    font-weight: 400;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    position: relative;
+
+    position: absolute;
+    left: 50px;
+    top: 0px;
+
+
+
+
+
+    &:hover {
+        cursor: pointer;
+        background-color: #9747FF;
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 700px) {
+    #privacy {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    button{
+        left: 25px;
+    }
+}
