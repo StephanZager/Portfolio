@@ -6,6 +6,10 @@ footer {
     a {
         color: white;
         font-size: 18px;
+
+        &:hover {
+            color: #70E61C;
+        }
     }
 
     span {

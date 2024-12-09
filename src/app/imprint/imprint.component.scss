@@ -1,65 +1,79 @@
 :host {
-    display: flex;
-    flex-direction: column;    
-    min-height: 100vh;
-    width: 100%;
-    max-width: 1440px;
-    
-  }
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1440px;
 
-  .imprint{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 25px;
-    
+}
 
-    @media(max-width: 1023px){
-        margin-top: 40px;
-    }
-  }
-  
-  section {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 1; 
-    overflow: hidden;
-    position: relative;
-  }
-  
-  footer {
-    flex-shrink: 0; 
-  }
+.imprint {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 25px;
+  overflow: auto;
 
+  @media(max-width: 1023px) {
+    margin-top: 40px;
+  }
+}
+
+section {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 120px;
+  background-color: #70E61C;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px !important;
+  font-weight: 400;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  position: relative;
+
+  position: absolute;
+  left: 25px;
+  top: 130px;
+
+
+
+
+
+  &:hover {
+    cursor: pointer;
+    background-color: #9747FF;
+    transform: scale(1.1);
+  }
+}
+
+@media(max-width: 534px) and (max-height: 974px) {
   button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 45px;
-    width: 120px;
-    background-color: #70E61C;
-    border: none;
-    border-radius: 10px;
-    color: white;
-    font-size: 18px !important;
-    font-weight: 400;
-    transition: transform 0.2s ease, background-color 0.2s ease;
-    position: relative;
+    top: auto;
+    bottom: 20px;
+  }
 
-    position: absolute;
-    left: 25px;
-    top: 130px;
+}
+
+@media(max-width: 534px) and (max-height: 820px) {
+ 
 
 
-    
-
-
-    &:hover {
-        cursor: pointer;
-        background-color: #9747FF;
-        transform: scale(1.1);       
-    }
 }

@@ -60,7 +60,16 @@ section {
     z-index: 0;
 }
 
-@media (max-width: 1023px) {}
+@media (max-width: 1023px) {
+
+    section{
+       margin-top: 80px;
+    }
+
+    .seperator-right {
+        width: calc(50% - 140px) !important;
+    }
+}
 
 @media (max-width: 450px) {
     h2 {

@@ -107,7 +107,7 @@ section {
     section{
         height: 100%;
         padding-bottom: 40px;
-
+        margin-top: 80px;
         padding-left: 75px;
         padding-right: 75px;
     }
@@ -132,6 +132,17 @@ section {
         
     bottom: -248px;
     left: -231px;
+    }
+
+    .seperator {
+        position: absolute;
+        left: 0;
+        height: 4px;
+        background-color: #9747FF;
+        width: calc(50% - 130px);
+    
+    
+    
     }
 }
 
