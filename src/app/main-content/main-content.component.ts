@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Renderer2 } from '@angular/core';
 import { LadingPageComponent } from './lading-page/lading-page.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { MySkillsComponent } from './my-skills/my-skills.component';
@@ -13,6 +13,20 @@ import { ContactComponent } from './contact/contact.component';
   templateUrl: './main-content.component.html',
   styleUrls: ['./main-content.component.scss', './../../styles.scss']
 })
-export class MainContentComponent {
+export class MainContentComponent implements OnInit {
 
+  constructor(private renderer: Renderer2) {}
+
+  ngOnInit(): void {
+    this.setScrollMarginTopForChrome();
+  }
+
+  setScrollMarginTopForChrome(): void {
+    const isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+    if (isChrome) {
+      this.renderer.setStyle(document.documentElement, '--scroll-margin-top', '140px');
+    } else {
+      this.renderer.setStyle(document.documentElement, '--scroll-margin-top', '0px');
+    }
+  }
 }
