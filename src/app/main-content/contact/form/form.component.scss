@@ -117,8 +117,10 @@ a {
     gap: 8px;
 
     input[type="checkbox"] {
-        width: 18px;
-        height: 18px;
+        width: 16px;
+        height: 16px;
+        min-width: 16px;
+        min-height: 16px;
         appearance: none;
         background-color: transparent;
         border: 2px solid #70E61C;
