@@ -83,11 +83,11 @@ a{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 32px;
+    gap: 10px;
     margin-bottom: 40px;
 
     div {
-        width: 70px;
+        width: 90px;
         height: 4px;
         border-top-left-radius: 2px;
         border-bottom-left-radius: 2px;
@@ -226,13 +226,14 @@ button {
     display: none;
 }
 
-@media (max-width: 1490px) {
+@media (max-width: 1300px) {
 
+    .headline{
+        gap: 40px;
 
-
-
-    button {
-        
+        div{
+            width: 60px;
+        }
     }
 }
 
