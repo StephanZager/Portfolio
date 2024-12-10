@@ -79,9 +79,19 @@ section {
     height: 40px;
     border: 2px solid white;
     border-radius: 100%;
+  
+    .hover{
+        display: none;
+    }
 
     &:hover {
+        .hover{
+            display: block;
+        }
 
+        .normal{
+            display: none;
+        }
         border: 2px solid #70E61C;
     }
 
@@ -91,6 +101,8 @@ section {
 
        
     }
+
+    
 }
 
 .background-shadow{

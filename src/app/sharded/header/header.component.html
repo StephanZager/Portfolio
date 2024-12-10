@@ -32,7 +32,7 @@
 
     <div class="toggle-switch">
         <span class="toggle-label left">EN</span>
-        <input type="checkbox" id="language-switch" role="switch">
+        <input type="checkbox" id="language-switch" role="switch" (change)="switchLanguage($event)" [checked]="!isEnglish">>
         <label for="language-switch"></label>
         <span class="toggle-label right">DE</span>
     </div>
