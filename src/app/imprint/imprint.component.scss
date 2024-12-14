@@ -74,6 +74,16 @@ button {
 
 @media(max-width: 534px) and (max-height: 820px) {
  
+ .imprint {
+    margin-top: 40px;
+    height: 200px;
+    overflow: auto;
+  }
 
+  button {
+    left: auto;
+    right: 20px;
+  }
+  
 
 }
