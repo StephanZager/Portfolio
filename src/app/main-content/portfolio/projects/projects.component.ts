@@ -19,8 +19,8 @@ export class ProjectsComponent {
       name : 'Join',
       programmingLanguage: ['JavaScript','HTML','CSS','Firebase'],
       description: 'portfolio.PROJECT.JOIN_DESCRIPTION',
-      linkGithub: 'https://github.com/',
-      linkLive: 'https://github.com/',
+      linkGithub: 'https://github.com/StephanZager/join.git',
+      linkLive: 'https://www.join.stephan-zager.de//',
     },
     {
       img: './../../../assets/img/portfolio/pollo-loco.png',

@@ -29,6 +29,10 @@ header {
     width: 180px;
     height: auto;
     background: none;
+
+    &hover {
+        cursor: pointer;
+    }
 }
 
 a {
@@ -57,6 +61,23 @@ a {
         animation: underline-expand 0.2s forwards;
     }
 }
+
+.logo-link {
+    color: inherit; 
+    font-weight: inherit; 
+    font-size: inherit; 
+    line-height: inherit; 
+    background: none;
+  
+    &:hover {
+      color: inherit; 
+      cursor: pointer;
+    }
+  
+    &::after {
+      content: none; 
+    }
+    }
 
 @keyframes underline-expand {
     from {
