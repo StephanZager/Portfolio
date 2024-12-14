@@ -51,3 +51,7 @@
         value="submit">{{ 'contact.FORM.BUTTON' | translate }}</button>
 
 </form>
+
+<div *ngIf="showSuccessMessage" class="success-popup">
+    <p style="background: none;">{{ 'contact.FORM.EMAIL_SEND' | translate }}</p>
+  </div>

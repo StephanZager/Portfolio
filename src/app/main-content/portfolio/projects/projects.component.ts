@@ -27,8 +27,8 @@ export class ProjectsComponent {
       name : 'El Pollo Loco',
       programmingLanguage: ['JavaScript','HTML','CSS'],
       description: 'portfolio.PROJECT.ELPOLLO_DESCRIPTION',
-      linkGithub: 'https://github.com/StephanZager/El-Pollo-Loco',
-      linkLive: '',
+      linkGithub: 'https://github.com/StephanZager/El-Pollo-Loco.git',
+      linkLive: 'https://www.el-pollo-loco.stephan-zager.de/index.html',
     }
   ]
 }

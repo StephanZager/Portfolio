@@ -58,7 +58,12 @@
         "PRIVACY_POLICY_LINK": "Privacy Policy",
         "LAST_TEXT": "and agree to the processing of my data as outlined."
       },
-      "BUTTON": "Send message :)"
+      "BUTTON": "Send message :)",
+      "EMAIL_SEND": "email send"
+
     }
+  },
+  "continually_learning_popup":{
+    "DESCRIPTION" : "I have a special interest in learning"
   }
 }

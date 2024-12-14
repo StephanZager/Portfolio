@@ -2,6 +2,7 @@ import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { LanguageService } from './../../language.service';
 
 @Component({
   selector: 'app-header',
@@ -16,18 +17,17 @@ export class HeaderComponent {
   isClosing = false;
   isEnglish = true;
 
-  constructor(private translate: TranslateService) {
+  constructor(private translate: TranslateService, private languageService: LanguageService) {
     this.translate.addLangs(['en', 'de']);
     this.translate.setDefaultLang('en');
   }
-
-  
 
   switchLanguage(event: Event) {
     const input = event.target as HTMLInputElement;
     const language = input.checked ? 'de' : 'en';
     this.translate.use(language);
     this.isEnglish = language === 'en';
+    this.languageService.setLanguage(language);
   }
 
   toggleBurgerMenu() {

@@ -37,6 +37,31 @@ section {
 
 }
 
+.icons-container {
+    position: relative;
+  
+    .continually-learning-popup {
+      position: absolute;
+      top: -150%;
+      left: 50%;
+      transform: translateX(-50%);     
+      background-color: none;
+     
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 10;
+    }
+  }
+
+  .last-skill {
+    cursor: pointer;
+  
+   
+  }
+
+  .last-img {
+    cursor: pointer;
+  }
+
 .another-skill-section {
     display: flex;
     flex-direction: column;
@@ -156,18 +181,7 @@ a{
     }
 }
 
-.continually-learning-popup {
-    display: none;
 
-    &:hover {
-        display: block;
-        position: absolute;
-        background: none;
-        margin-top: 60px;
-        margin-left: -5px;
-    }
-
-}
 
 .padding {
     

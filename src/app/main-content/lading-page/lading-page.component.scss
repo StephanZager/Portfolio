@@ -5,7 +5,10 @@ h1 {
     background: none;
 }
 
-
+.p-german{
+    font-size: 44px !important;
+    margin-right: -5px !important;
+}
 
 h2 {
     color: #9747FF;
@@ -151,6 +154,11 @@ h2 {
 
 @media (max-width: 1369px) {
 
+    .p-german{
+        font-size: 32px !important;
+        margin-right: 3px !important;
+    }
+
     .background-img {
         height: 460px;
     }
@@ -222,6 +230,11 @@ h2 {
         height: 452px !important;
     }
 
+    .p-german{
+        font-size: 27px !important;
+        margin-right: -2px !important;
+    }
+
     .photo-shadow {
         height: 700px !important;
     }
@@ -259,6 +272,42 @@ h2 {
     .headline {
         bottom: 100px;
     }
+}
+
+@media (max-width: 387px) and (min-height: 1260px) and (max-height: 1400px) {
+  
+
+    .profile-picture {
+        margin-top: 130px !important;
+    }
+
+   
+}
+
+@media (max-width: 359px) and (min-height: 1260px) and (max-height: 1400px) {
+  
+
+    .background-img {
+        height: 427px !important;
+    }
+    .profile-picture {
+        margin-top: 187px !important;
+    }
+
+   
+}
+
+@media (max-width: 338px) and (min-height: 1260px) and (max-height: 1400px) {
+  
+
+    .background-img {
+        height: 418px !important;
+    }
+    .profile-picture {
+        margin-top: 226px !important;
+    }
+
+   
 }
 
 @media (max-width: 1369px) and (min-height: 1100px) and (max-height: 1259px) {
@@ -306,6 +355,11 @@ h2 {
         }
 
 
+    }
+
+    .p-german{
+        font-size: 26px !important;
+        margin-right: 1px !important;
     }
 }
 
@@ -360,6 +414,11 @@ h2 {
     .profile-picture {
         margin-top: 90px;
     }
+
+    .p-german{
+        font-size: 26px !important;
+        margin-right: -14px !important;
+    }
 }
 
 @media (max-width: 450px) {
@@ -377,6 +436,13 @@ h2 {
         }
 
 
+    }
+}
+
+@media (max-width: 340px){
+    .p-german{
+        font-size: 22px !important;
+        margin-right: -14px !important;
     }
 }
 
@@ -481,7 +547,7 @@ h2 {
 
 }
 
-@media (max-width: 385px) {
+@media (max-width: 387px) {
     h1 {
         font-size: 37px;
     }

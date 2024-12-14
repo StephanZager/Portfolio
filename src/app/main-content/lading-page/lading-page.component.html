@@ -9,7 +9,7 @@
         <div class="headline">
             <div style="display: flex; align-items: center;">
                 <div>
-                    <p>{{ 'lading_page.TITLE' | translate }}</p>
+                    <p [ngClass]="{'p-german': currentLanguage === 'de'}">{{ 'lading_page.TITLE' | translate }}</p>
                 </div>
                 <div>
                     <h1>Stephan Zager</h1>

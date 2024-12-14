@@ -151,6 +151,33 @@ a {
     }
 }
 
+.success-popup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 50px;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #70e61cca;
+    color: white;
+    padding: 35px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: bottom 0.5s ease-in-out;
+    z-index: 1000;
+
+    p{
+        font-size: 18px;
+    }
+  }
+  
+  .success-popup.show {
+    bottom: 20px; 
+  }
+
 @media(max-width: 1023px) {
     form {
        

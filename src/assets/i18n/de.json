@@ -15,7 +15,7 @@
   "about_me": {
     "TITLE": "Über mich",
     "ABOUT_ME": "Hallo, ich bin ein deutschsprachiger Frontend-Entwickler aus der Nähe von Stendal. Begeistert von den grenzenlosen Möglichkeiten in der IT, freue ich mich darauf, optisch ansprechende und intuitive Websites und Anwendungen zu gestalten.",
-    "LOCATION": "Flexibel in Bezug auf Arbeitsumgebungen kann ich sowohl vor Ort in Stendal als auch remote effektiv arbeiten.",
+    "LOCATION": "Ich bin flexibel in meiner Arbeitsweise und kann sowohl vor Ort in Stendal als auch remote effizient und produktiv arbeiten.",
     "CHALLENGE": "Ich bin aufgeschlossen und stets auf der Suche nach persönlichen Herausforderungen, um mein Wissen und meine Fähigkeiten kontinuierlich zu verbessern.",
     "MISSION":"In meinem Beruf geht es beim Programmieren nicht nur darum, Code zu schreiben; es ist eine kreative Form der Problemlösung. Ich bin stolz darauf, komplexe technische Herausforderungen in einfache, benutzerfreundliche Lösungen zu verwandeln. Auf diese Weise helfe ich Ihnen, Ihre Ziele zu erreichen und Ihre Visionen zum Leben zu erwecken."
   },
@@ -61,7 +61,12 @@
         "PRIVACY_POLICY_LINK": "Datenschutzerklärung",
         "LAST_TEXT": "gelesen und stimme zu."
       },
-      "BUTTON": "Nachricht senden :)"
+      "BUTTON": "Nachricht senden :)",
+      "EMAIL_SEND": "email gesendet"
     }
+  },
+  "continually_learning_popup":{
+    "DESCRIPTION" : "Ich habe ein besonderes Interesse an"
   }
+  
 }
