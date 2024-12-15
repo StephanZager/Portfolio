@@ -5,11 +5,13 @@ import { MySkillsComponent } from './my-skills/my-skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { FooterComponent } from '../sharded/footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
+import { HeaderComponent } from "../sharded/header/header.component";
+import { NavBarComponent } from '../sharded/header/nav-bar/nav-bar.component';
 
 @Component({
   selector: 'app-main-content',
   standalone: true,
-  imports: [LadingPageComponent, AboutMeComponent, MySkillsComponent, PortfolioComponent, FooterComponent, ContactComponent],
+  imports: [LadingPageComponent, AboutMeComponent, MySkillsComponent, PortfolioComponent, FooterComponent, ContactComponent, HeaderComponent, NavBarComponent],
   templateUrl: './main-content.component.html',
   styleUrls: ['./main-content.component.scss', './../../styles.scss']
 })

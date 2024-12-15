@@ -1,41 +1,36 @@
 <header>
-        
-    <a href="#top" class="logo-link">
+    <div class="container">
+      <a href="#top" class="logo-link">
         <img class="logo" src="./../../../assets/img/logo/Stephan-logo.png" alt="">
       </a>
-    <nav class="nav-desktop">
+      <nav class="nav-desktop">
         <a href="#about-me">{{ 'nav.ABOUT_ME' | translate }}</a>
         <a href="#skills">{{ 'nav.MY_SKILLS' | translate }}</a>
         <a href="#portfolio">Portfolio</a>
-        
         <div class="toggle-switch">
-            <span class="toggle-label left">EN</span>
-            <input type="checkbox" id="language-switch" role="switch" (change)="switchLanguage($event)">
-            <label for="language-switch"></label>
-            <span class="toggle-label right">DE</span>
+          <span class="toggle-label left">EN</span>
+          <input type="checkbox" id="language-switch" role="switch" (change)="switchLanguage($event)">
+          <label for="language-switch"></label>
+          <span class="toggle-label right">DE</span>
         </div>
-                
-    </nav>
-
-    
-
-    <div (click)="toggleBurgerMenu()" class="burger">
+      </nav>
+      <div (click)="toggleBurgerMenu()" class="burger">
         <div class="line1"></div>
         <div class="line2"></div>
         <div class="line3"></div>
+      </div>
     </div>
-</header>
-
-<nav [ngClass]="{'burger-menu': true, 'closing': isClosing}" *ngIf="isBurgerMenuOpen || isClosing">
+  </header>
+  
+  <nav [ngClass]="{'burger-menu': true, 'closing': isClosing}" *ngIf="isBurgerMenuOpen || isClosing">
     <a href="#about-me" (click)="toggleBurgerMenu()">{{ 'nav.ABOUT_ME' | translate }}</a>
     <a href="#skills" (click)="toggleBurgerMenu()">{{ 'nav.MY_SKILLS' | translate }}</a>
     <a href="#portfolio" (click)="toggleBurgerMenu()">Portfolio</a>
     <a href="#contact" (click)="toggleBurgerMenu()">{{ 'nav.CONTACT' | translate }}</a>
-
     <div class="toggle-switch">
-        <span class="toggle-label left">EN</span>
-        <input type="checkbox" id="language-switch" role="switch" (change)="switchLanguage($event)" [checked]="!isEnglish">>
-        <label for="language-switch"></label>
-        <span class="toggle-label right">DE</span>
+      <span class="toggle-label left">EN</span>
+      <input type="checkbox" id="language-switch" role="switch" (change)="switchLanguage($event)" [checked]="!isEnglish">
+      <label for="language-switch"></label>
+      <span class="toggle-label right">DE</span>
     </div>
-</nav>
+  </nav>

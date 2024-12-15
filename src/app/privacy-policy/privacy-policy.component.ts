@@ -2,13 +2,14 @@ import { Component } from '@angular/core';
 import { FooterComponent } from '../sharded/footer/footer.component';
 import { Location } from '@angular/common';
 import { ViewEncapsulation } from '@angular/core';
+import { HeaderComponent } from "../sharded/header/header.component";
 
 
 
 @Component({
   selector: 'app-privacy-policy',
   standalone: true,
-  imports: [FooterComponent],
+  imports: [FooterComponent, HeaderComponent, HeaderComponent],
   templateUrl: './privacy-policy.component.html',
   styleUrls: ['./privacy-policy.component.scss'],
   encapsulation: ViewEncapsulation.ShadowDom
