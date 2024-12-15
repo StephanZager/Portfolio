@@ -4,20 +4,20 @@
             alt="Background Shadow">
     </div>
     <div class="about-me">
-        <h3>{{ 'about_me.TITLE' | translate }}</h3>
+        <h3 class="animate-from-bottom">{{ 'about_me.TITLE' | translate }}</h3>
         <div class="about-me-info">
             <p class="person-info">{{ 'about_me.ABOUT_ME' | translate }}
             </p>
 
-            <div *ngFor="let mindset of mindsets" class="mindset">
-                <img [src]="mindset.imgSrc" alt="">
-                <p>{{ 'about_me.' + mindset.text | translate }}</p>
-            </div>
+            <div *ngFor="let mindset of mindsets" class="mindset" >
+                <img  [src]="mindset.imgSrc" alt="">
+                <p >{{ 'about_me.' + mindset.text | translate }}</p>
+              </div>
         </div>
 
     </div>
     <div class="profile-picture">
-        <div class="img">
+        <div class="img animate-from-bottom">
             <img src="./../../../assets/img/lading-page/stephan-bewerbung.png" alt="">
         </div>
         <div class="seperator"></div>

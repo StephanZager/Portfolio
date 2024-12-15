@@ -1,6 +1,6 @@
 <section>
     <img class="background-shadow" src="./../../../assets/img/background-shadow/green-shadow-skills-portfolio.png" alt="">
-    <div class="icon-skill-bar icon-skill-bar-desktop">
+    <div class="icon-skill-bar icon-skill-bar-desktop animate-from-left">
       <div *ngFor="let skill of skills; let last = last" class="icons-container" [ngClass]="{'last-img': last}">
         <img [src]="skill.skillImg" alt="" (click)="togglePopup(skill)">
         <p [ngClass]="{'last-skill': last}">{{ skill.skillName | translate }}</p>
@@ -12,14 +12,14 @@
   
     <div class="another-skill-section">
       <div class="headline">
-        <h2>{{'my_skills.TITLE' | translate }}</h2>
+        <h2 class=" animate-from-bottom">{{'my_skills.TITLE' | translate }}</h2>
         <div></div>
       </div>
       <div style="background: none;">
         <p class="mobile-info padding">{{'my_skills.EXPERIENCE' | translate }}</p>
       </div>
   
-      <div class="icon-skill-bar icon-skill-bar-mobile">
+      <div class="icon-skill-bar icon-skill-bar-mobile animate-from-left">
         <div *ngFor="let skill of skills; let last = last" class="icons-container" [ngClass]="{'last-img': last}">
           <img [src]="skill.skillImg" alt="" (click)="togglePopup(skill)">
           <p [ngClass]="{'last-skill': last}">{{ skill.skillName | translate }}</p>
@@ -33,7 +33,7 @@
         <h4 style="z-index: 4; background: none;">{{'my_skills.UNDER_HEADING.P' | translate }} <span>{{'my_skills.UNDER_HEADING.SPAN' | translate }}</span>?</h4>
         <p style="z-index: 4; background: none;" class="mobile-info">{{'my_skills.CONTACT_ME' | translate }}</p>
       </div>
-      <a href="#contact">
+      <a href="#contact" >
         <button>{{'my_skills.BUTTON' | translate }}</button>
       </a>
     </div>

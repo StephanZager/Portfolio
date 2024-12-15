@@ -1,3 +1,36 @@
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .animate-from-left {
+    animation: slideInFromLeft 1s ease-out;
+  }
+  
+  .animate-from-right {
+    animation: slideInFromRight 1s ease-out;
+  }
+
+
+
+
 .projects {
     display: flex;
     justify-content: space-around;

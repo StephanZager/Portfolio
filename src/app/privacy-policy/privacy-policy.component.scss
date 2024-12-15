@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 #privacy {
     position: relative;
     display: flex;
@@ -42,6 +46,11 @@
         font-size: 1.2em;
         margin-bottom: 20px;
     }
+}
+
+a{
+   
+    text-decoration: none;
 }
 
 button {

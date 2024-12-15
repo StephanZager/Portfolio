@@ -1,8 +1,8 @@
 <div *ngFor="let project of projects; let i = index" [ngClass]="{'row-reverse': i % 2 !== 0}" class="projects">    
-        <div>
+        <div >
             <img [src]="project.img" alt="">
         </div>
-        <div class="project-info">
+        <div class="project-info ">
             <div class="project-explanation">
                 <h4>{{project.name}}</h4>
                 <span>{{project.programmingLanguage.join(' | ')}}</span>

@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit, Renderer2 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 import { ContinuallyLearningPopupComponent } from './continually-learning-popup/continually-learning-popup.component';
@@ -10,7 +10,7 @@ import { ContinuallyLearningPopupComponent } from './continually-learning-popup/
   templateUrl: './my-skills.component.html',
   styleUrls: ['./my-skills.component.scss']
 })
-export class MySkillsComponent {
+export class MySkillsComponent implements OnInit {
 
   skills = [
     { skillImg: './../../../assets/img/icons/html.png', skillName: 'HTML' },
@@ -45,4 +45,26 @@ export class MySkillsComponent {
       this.showPopup = false;
     }
   }
-}
+
+  constructor(private el: ElementRef, private renderer: Renderer2) {}
+  
+    ngOnInit(): void {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            if (entry.target.classList.contains('animate-from-left')) {
+              this.renderer.addClass(entry.target, 'in-view');
+            } else if (entry.target.classList.contains('animate-from-bottom')) {
+              this.renderer.addClass(entry.target, 'in-view');
+            }
+            observer.unobserve(entry.target);
+          }
+        });
+      });
+  
+      const elements = this.el.nativeElement.querySelectorAll('.animate-from-left, .animate-from-bottom');
+      elements.forEach((element: Element) => observer.observe(element));
+    }
+  }
+
+

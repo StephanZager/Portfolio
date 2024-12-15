@@ -31,4 +31,6 @@ export class ProjectsComponent {
       linkLive: 'https://www.el-pollo-loco.stephan-zager.de/index.html',
     }
   ]
+
+  
 }

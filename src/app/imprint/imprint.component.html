@@ -2,25 +2,15 @@
 <app-header></app-header>
 <section>
 
-    <button (click)="goBack()">Zurück</button>
+    <button (click)="goBack()">{{ 'imprint.BACK_BUTTON' | translate }}</button>
 
     <div class="imprint">
-    <h1>Impressum</h1>
-    <p>Angaben gemäß § 5 DDG</p>
-    <p>Stephan Zager
-        Südwall 22
-        39576 Stendal
-    </p>
-    <p> <strong>Vertreten durch: </strong>
-        Stephan Zager<br>
-    </p>
-    <p><strong>Kontakt:</strong>
-        Telefon: 015-259723608
-        E-Mail: <a href='mailto:Blitzis&#64;outlook.de'>Blitzis&#64;outlook.de</a><br></p><br>
-    Impressum vom <a href="https://www.impressum-generator.de">Impressum Generator</a> der
-    <a href="https://www.kanzlei-hasselbach.de/standorte/bonn/" rel="nofollow">Kanzlei
-        Hasselbach,
-        Bonn</a>
+      <h1>{{ 'imprint.TITLE' | translate }}</h1>
+      <p>{{ 'imprint.SECTION_1_TITLE' | translate }}</p>
+      <p>{{ 'imprint.NAME_ADDRESS' | translate }}</p>
+      <p> <strong>{{ 'imprint.REPRESENTED_BY' | translate }}</strong></p>
+      <p><strong>{{ 'imprint.CONTACT' | translate }}</strong></p><br>
+      <p>{{ 'imprint.IMPRINT_GENERATOR' | translate }}</p>
     </div>
 
 </section>
